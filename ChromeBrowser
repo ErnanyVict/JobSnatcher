@@ -1,0 +1,17 @@
+from selenium.webdriver import Chrome
+from selenium.webdriver.chrome.service import Service
+from selenium import webdriver
+
+class ChromeBrowser(Chrome):
+    def __init__(self, options = None, service = None, keep_alive = True, path_driver =None):
+        super().__init__(options, service, keep_alive)
+    
+    def __call__(self, *args, **kwds):
+        self.path_driver 
+        self.chrome_options = webdriver.ChromeOptions
+        self.chrome_service = Service(executable_path=self.path_driver)
+        return super().__call__(*args, **kwds)
+
+if __name__ == "__main__":
+    chrome_browser = ChromeBrowser
+    chrome_browser
